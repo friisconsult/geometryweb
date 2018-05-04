@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="h2">Welcome to the Code showcase</div>
+    <p>
+        This is a showcase, just to give the impression of my architecture/codeing style.
+    </p>
+    <div class="h3">The environment selection</div>
+    <p>
+        Using a WEB API, Web page and an iOS app, might seem to be complete over engineering of the solution!<br/>
+        and yes, it is! <br/>
+        I could have created a simple command line app, that took the parameters.
+        But to demonstrate the way I think when greenfielding a solution.<br/>
+        In general I work with a multiple tier architecture, moving all business logic on the backend to ensure the cross platform support, 
+        or in libraries however this limits the advantage of cross platform.
+    </p>
+    <div class="h3">Architecture / developming language</div>
+    <div class="h4">Backend</div>
+    <p>
+        The backend is written in C#, using the .Net Core 2. using the MVC WEB API standard. 
+    </p>
+    <div class="h4">Web Frontend</div>
+    <p>
+        The web frontend is using the .Net Core MVC web template, using Bootstrap and Razor
+    </p>
+    <div class="h4">Mobile App</div>
+    <p>
+        As an extra client, demonstrating the cross platform capability of the backend, I have created a simple iOS app
+        written in Swift 4
+    </p>
+    
+    <div class="h3">The codebase</div>
+    <p>You'r welcome to inspect and download the code from Github</p>
+    <a href="https://github.com/perfriis">Repository on github</a>
+</div>
+
+
+<form action="https://geometric-api.azurewebsites.net/api/Geometry" method="get">
+    <div class="form-group">
+        <label for="A">Length of A</label>
+        <input type="number" class="form-control" name="a" value="5" id="A"/>
+    </div>
+    <div class="form-group">
+        <label for="B">Length of B</label>
+        <input type="number" class="form-control" name="b" value="7" id="B"/>
+    </div>
+    <div class="form-group">
+        <label for="C">Length of C (must be the longste side)</label>
+        <input type="number" class="form-control" name="c" value="10" id="C"/>
+    </div>
+    
+    <button type="submit" class="btn btn-default">Evaluate triangle type</button>
+</form>
